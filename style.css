@@ -36,12 +36,13 @@ h3 {
     font-size: 3.125vw;
     font-weight: bold;
     animation-name: text;
-    animation-duration: 2s;
+    animation-duration: 1.7s;
 }
 
 @keyframes text {
     0%{
         color: transparent;
+        letter-spacing: 1vw;
     }
 }
 
