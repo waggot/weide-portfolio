@@ -313,3 +313,18 @@ ul {
     width: 29vw;
     height: 41vw;
 }
+
+meter {
+    width: 250px;
+    height: 35px;
+}
+
+meter::-webkit-meter-bar {
+    background: none;
+    background-color: transparent;
+    border: 2px solid;
+}
+
+meter::-webkit-meter-optimum-value {
+    background: black;
+}
