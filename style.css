@@ -8,7 +8,7 @@ html {
 body {
     text-align: center;
     background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(223,223,223,1) 62%, rgba(173,173,173,1) 100%);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(223,223,223,1) 31%, rgba(173,173,173,1) 100%);
 }
 
 p {
@@ -135,7 +135,7 @@ nav li {
     margin: 0 0 0 0;
     position: fixed;
     background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(223,223,223,1) 62%, rgba(173,173,173,1) 100%);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(223,223,223,1) 31%, rgba(173,173,173,1) 100%);
     box-shadow: 0px 2px 2px -2px black;
 }
 
@@ -183,7 +183,7 @@ nav a:hover {
 
 .bg1 {
     background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(223,223,223,1) 62%, rgba(173,173,173,1) 100%);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(223,223,223,1) 31%, rgba(173,173,173,1) 100%);
 }
 
 .mypic {
