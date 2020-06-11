@@ -275,6 +275,9 @@ img {
 
 .responsiveimg {
     width: 750px;
+    border-radius: 15px;
+    background:#0a0a23;
+    padding: 10px;
 }
 
 .infoimg {
@@ -294,11 +297,17 @@ ul {
 
 .responsiveimg1 {
     width: 300px;
+    border-radius: 15px;
+    background: #0a0a23;
+    padding: 10px;
 }
 
 .responsiveimg2 {
     width: 556px;
     height: 790px;
+    border-radius: 15px;
+    background: #0a0a23;
+    padding: 10px;
 }
 
 meter {
@@ -336,6 +345,9 @@ meter::-webkit-meter-optimum-value {
     width: 128px;
     margin-left: 15px;
     font-weight: bold;
+    border-radius: 14px;
+    background: white;
+    padding: 10px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -369,4 +381,16 @@ meter::-webkit-meter-optimum-value {
         height: 13vw;
         height: auto
     }
+}
+
+.meterbar{
+    font-weight: bold;
+}
+
+.bordertext{
+    border-radius: 15px;
+    background: #ffffff;
+    padding: 30px;
+    width: 700px;
+    margin: auto;   
 }
