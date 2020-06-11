@@ -129,7 +129,7 @@ nav li {
 }
 
 header {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     top: -30px;
     margin-top: -10px;
 }
@@ -336,4 +336,27 @@ meter::-webkit-meter-optimum-value {
     height: 128px;
     width: 128px;
     margin-left: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .container {
+        display: none;
+    }
+    @keyframes text {
+        0%{
+            color: transparent;
+            letter-spacing: 0.31vw;
+        }
+    }
+} 
+@media only screen and (min-width: 992px) {
+    .container {
+        display: inherit;
+    }
 }
