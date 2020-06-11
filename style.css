@@ -21,7 +21,7 @@ body {
 }
 
 .text {
-    font-size: 3.125vw;
+    font-size: 60px;
     font-weight: bold;
     animation-name: text;
     animation-duration: 1.7s;
@@ -35,7 +35,7 @@ body {
 }
 
 .text1 {
-    font-size: 2.2395833333333335vw;
+    font-size: 43px;
     animation-name: text1;
     animation-duration: 4s;
 }
@@ -58,7 +58,7 @@ body {
 }
 
 .landingimg {
-    width:  13.020833333333334vw;
+    width:  250px;
     animation-name: landingimg;
     animation-duration: 1s;
 }
@@ -84,18 +84,18 @@ body {
 
 
 .showcase, .showcase:visited {
-    padding:  0.7291666666666666vw 1.3020833333333333vw;
+    padding:  15px 24px;
     display: inline-block;
-    border: 0.10416666666666667vw solid;
-    border-radius: 0.20833333333333334vw;
+    border: 2px solid;
+    border-radius: 4px;
     text-decoration: inherit;
     color: #0b0c10;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     background-color: transparent;
     transition: 0.4s;
-    margin-top: 1.0416666666666667vw;
-    font-size:  0.8333333333333334vw;
+    margin-top: 20px;
+    font-size:  16px;
 }
 
 .showcase:hover {
@@ -115,7 +115,7 @@ nav ul {
 }
 
 nav li {
-    margin: -0.2604166666666667vw;
+    margin: -5px;
     padding: 0;
 }
 
@@ -129,9 +129,9 @@ nav li {
 }
 
 header {
-    margin-bottom: 4.166666666666667vw;
-    top: -1.5625vw;
-    margin-top: -0.5208333333333334vw;
+    margin-bottom: 100px;
+    top: -30px;
+    margin-top: -10px;
 }
 
 header::after {
@@ -142,16 +142,16 @@ header::after {
 
 .logo1 {
     float: left;
-    margin-left: 1.0416666666666667vw;
+    margin-left: 20px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.0416666666666667vw;
+    font-size: 20px;
 }
 
 nav li {
     display: inline-block;
-    padding-top: 1.8229166666666667vw;
-    margin-left: 2.0833333333333335vw;
-    margin-right: 1.0416666666666667vw;
+    padding-top: 35px;
+    margin-left: 40px;
+    margin-right: 20px;
 }
 
 nav a{
@@ -159,7 +159,7 @@ nav a{
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 0.8333333333333334vw;
+    font-size: 16px;
     opacity: 68%;
     font-family: 'Montserrat', sans-serif;
     transition: 0.4s;
@@ -167,7 +167,7 @@ nav a{
 
 nav a:hover {
     opacity: 100%;
-    font-size: 0.9375vw;
+    font-size: 18px;
 }
 
 .bg1 {
@@ -176,9 +176,9 @@ nav a:hover {
 }
 
 .mypic {
-    height: 13.020833333333334vw;
+    height: 250px;
     border-radius: 50%;
-    border: 0.15625vw solid;
+    border: 3px solid;
     animation-name: mypic;
     animation-duration: 4s;
 }
@@ -190,19 +190,19 @@ nav a:hover {
 }
 
 .abouthr {
-    height: 0.3125vw; 
+    height: 6px; 
     background: black; 
-    margin-bottom: 4.166666666666667vw; 
+    margin-bottom: 80px; 
     width: 5%;
     margin: auto;
 }
 
 .divhr {
     background-color: black;
-    height: 0.10416666666666667vw;
+    height: 2px;
     width: 50%;
-    margin-top: 3.125vw;
-    margin-bottom: 3.125vw;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 p {
@@ -214,7 +214,7 @@ p {
 }
 
 ::-webkit-scrollbar {
-    width:  0.4166666666666667vw;
+    width:  8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -223,7 +223,7 @@ p {
 
 ::-webkit-scrollbar-thumb{
     background: #595959;
-    border-radius: 0.20833333333333334vw;
+    border-radius: 4px;
 
 }
 
@@ -232,11 +232,11 @@ p {
 }
 
 footer {
-    margin-bottom: 2.6041666666666665vw;
+    margin-bottom: 50px;
 }
 
 .icon {
-    height: 2.0833333333333335vw;
+    height: 40px;
     opacity: 60%;
     transition: 0.5s;
 }
@@ -247,7 +247,7 @@ footer {
 
 .credit {
     text-transform: uppercase;
-    font-size: 0.6916666666666667vw;
+    font-size: 13px;
 }
 
 li {
@@ -255,13 +255,13 @@ li {
 }
 
 .ccaimg {
-    margin-top: 1.25vw;
-    margin-bottom: 0.7291666666666666vw;
+    margin-top: 24px;
+    margin-bottom: 14px;
 }
 
 .showcaseimg {
-    height: 26.041666666666668vw;
-    margin-top: 1.25vw;
+    height: 500px;
+    margin-top: 24px;
     max-width: 100%;
 }
 
@@ -275,15 +275,15 @@ img {
 }
 
 .responsiveimg {
-    width: 39.010416666666664vw;
+    width: 750px;
 }
 
 .infoimg {
-    width: 52.8125vw;
+    width: 1014px;
 }
 
 ul {
-    font-size: 0.8333333333333334vw;
+    font-size: 16px;
 }
 
 .box {
@@ -294,12 +294,12 @@ ul {
 }
 
 .responsiveimg1 {
-    width: 15.625vw;
+    width: 300px;
 }
 
 .responsiveimg2 {
-    width: 29vw;
-    height: 41vw;
+    width: 556px;
+    height: 790px;
 }
 
 meter {
