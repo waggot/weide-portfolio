@@ -345,8 +345,8 @@ meter::-webkit-meter-optimum-value {
     width: 128px;
     margin-left: 15px;
     font-weight: bold;
-    border-radius: 14px;
-    background: white;
+    border-radius: 16px;
+    background: black;
     padding: 10px;
 }
 
