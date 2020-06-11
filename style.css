@@ -24,7 +24,7 @@ body {
     font-size: 60px;
     font-weight: bold;
     animation-name: text;
-    animation-duration: 1.7s;
+    animation-duration: 3.7s;
 }
 
 @keyframes text {
@@ -37,7 +37,7 @@ body {
 .text1 {
     font-size: 43px;
     animation-name: text1;
-    animation-duration: 4s;
+    animation-duration: 5s;
 }
 
 @keyframes text1 {
@@ -60,7 +60,7 @@ body {
 .landingimg {
     width:  250px;
     animation-name: landingimg;
-    animation-duration: 1s;
+    animation-duration: 1.3s;
 }
 
 @keyframes landingimg {
