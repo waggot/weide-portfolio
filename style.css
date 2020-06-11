@@ -336,6 +336,7 @@ meter::-webkit-meter-optimum-value {
     height: 128px;
     width: 128px;
     margin-left: 15px;
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 600px) {
