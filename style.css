@@ -342,6 +342,9 @@ meter::-webkit-meter-optimum-value {
     .container {
         display: none;
     }
+    .abouthr {
+        width: 40%  ;
+    }
 }
 
 @media only screen and (min-width: 600px) {
@@ -358,5 +361,12 @@ meter::-webkit-meter-optimum-value {
 @media only screen and (min-width: 992px) {
     .container {
         display: inherit;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .landingimg {
+        height: 13vw;
+        height: auto
     }
 }
