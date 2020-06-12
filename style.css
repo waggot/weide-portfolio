@@ -373,17 +373,15 @@ meter::-webkit-meter-optimum-value {
 }
 
 @media only screen and (max-width: 600px) {
-    .container {
-        display: none;
-    }
+
     .abouthr {
         width: 40%  ;
     }
 }
 
 @media only screen and (min-width: 600px) {
-    .container {
-        display: none;
+    nav{
+        float: none;
     }
     @keyframes text {
         0%{
@@ -396,6 +394,9 @@ meter::-webkit-meter-optimum-value {
     .container {
         display: inherit;
     }
+    nav{
+        float: right;
+    }
 }
 
 @media only screen and (max-width: 1280px) {
@@ -403,6 +404,7 @@ meter::-webkit-meter-optimum-value {
         height: 13vw;
         height: auto
     }
+    
 }
 
 .meterbar{
