@@ -431,8 +431,13 @@ meter::-webkit-meter-optimum-value {
 
 @media only screen and (min-width: 600px) {
     nav{
-        float: none;
+        float: right;
     }
+
+    nav li{
+        display: inline-block;
+    }
+
     @keyframes text {
         0%{
             color: transparent;
