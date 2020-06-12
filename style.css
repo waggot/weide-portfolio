@@ -377,6 +377,18 @@ meter::-webkit-meter-optimum-value {
     .abouthr {
         width: 40%  ;
     }
+    nav{
+        float: none;
+    }
+    .container{
+        position: relative;
+    }
+   div{
+       max-width: 100%;
+   }
+   .bordertext{
+       max-width: 80%;
+   }
 }
 
 @media only screen and (min-width: 600px) {
@@ -388,6 +400,9 @@ meter::-webkit-meter-optimum-value {
             color: transparent;
             letter-spacing: 0.31vw;
         }
+    }
+    .bordertext{
+        width: 300px;
     }
 } 
 @media only screen and (min-width: 992px) {
