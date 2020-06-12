@@ -372,23 +372,61 @@ meter::-webkit-meter-optimum-value {
     padding: 10px;
 }
 
+.meterbar{
+    font-weight: bold;
+}
+
+.bordertext{
+    border-radius: 15px;
+    background: #ffffff;   
+    padding: 30px;
+    width: 850px;
+    margin: auto;   
+}
+
+.btnmargin{
+    margin-right: 50px;
+}
+
 @media only screen and (max-width: 600px) {
 
     .abouthr {
         width: 40%  ;
     }
+
     nav{
         float: none;
     }
+
+    nav li{
+        display: none;
+    }
+
     .container{
         position: relative;
     }
+
    div{
        max-width: 100%;
    }
+
    .bordertext{
        max-width: 80%;
    }
+
+   .item{
+    height: 60px;
+    width: 60px;
+    margin-left: 0.78vw;
+    font-weight: bold;
+    border-radius: 0.83vw;
+    background: black;
+    padding: 0.5vw;
+    }
+
+    .btnmargin{
+        margin-right: 0px;
+    }
 }
 
 @media only screen and (min-width: 600px) {
@@ -401,16 +439,12 @@ meter::-webkit-meter-optimum-value {
             letter-spacing: 0.31vw;
         }
     }
-    .bordertext{
-        width: 300px;
-    }
+    
 } 
+
 @media only screen and (min-width: 992px) {
     .container {
         display: inherit;
-    }
-    nav{
-        float: right;
     }
 }
 
@@ -420,16 +454,4 @@ meter::-webkit-meter-optimum-value {
         height: auto
     }
     
-}
-
-.meterbar{
-    font-weight: bold;
-}
-
-.bordertext{
-    border-radius: 15px;
-    background: #ffffff;   
-    padding: 30px;
-    width: 850px;
-    margin: auto;   
 }
