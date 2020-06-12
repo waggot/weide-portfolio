@@ -435,7 +435,11 @@ meter::-webkit-meter-optimum-value {
     }
 
     nav li{
-        display: inline-block;
+        display: none;
+    }
+
+    .bordertext{
+        max-width: 80%;
     }
 
     @keyframes text {
@@ -444,19 +448,17 @@ meter::-webkit-meter-optimum-value {
             letter-spacing: 0.31vw;
         }
     }
-    
-} 
 
-@media only screen and (min-width: 992px) {
-    .container {
-        display: inherit;
+    @keyframes text {
+        0%{
+            color: transparent;
+            letter-spacing: 3px;
+        }
     }
 }
 
-@media only screen and (max-width: 1280px) {
-    .landingimg {
-        height: 13vw;
-        height: auto
+@media only screen and (min-width: 992px) {
+    nav li{
+        display: inline-block;
     }
-    
 }
