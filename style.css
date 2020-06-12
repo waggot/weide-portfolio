@@ -86,14 +86,14 @@ body {
 
 }
 
-.ltrspacing{
-    animation: ltrspacing;
+.heading{
+    animation: heading;
     animation-duration: 4s;
 }
 
-@keyframes ltrspacing{
+@keyframes heading{
     0%{
-        letter-spacing: -6px;
+        color: transparent;
     }
 }
 
@@ -121,6 +121,17 @@ body {
 
 nav {
     float: right;
+}
+
+.home{
+    color: black;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.home:hover{
+    color:white;
+    letter-spacing: 4px;
 }
 
 nav ul {
@@ -189,12 +200,11 @@ nav a:hover {
     border-radius: 50%;
     border: 3px solid;
     animation-name: mypic;
-    animation-duration: 4s;
+    animation-duration: 2.5s;
 }
 
 @keyframes mypic {
     0%{
-        border-radius: 30%;
         height: 70px;
     }
 }
@@ -288,8 +298,8 @@ img {
 .responsiveimg {
     width: 750px;
     border-radius: 15px;
-    background:#0a0a23;
     padding: 10px;
+    background: #0a0a23;
 }
 
 .infoimg {
