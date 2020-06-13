@@ -199,7 +199,9 @@ nav a{
 nav a:hover {
     letter-spacing: 4px;
     color: white;
-}
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}    
 
 .mypic {
     height: 250px;
@@ -466,5 +468,34 @@ meter::-webkit-meter-optimum-value {
 @media only screen and (min-width: 992px) {
     nav li{
         display: inline-block;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 1024px) {
+    nav li{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    nav li{
+        display: inline-block;
+    }
+    .text{
+        font-size: 3.1vw;
+    }
+    .text1{
+        font-size: 2.2vw;
+    }
+    .landingimg{
+        height: 13vw;
+        width: 18vw;
+    }
+    .landinganchor{
+        padding:  0.78vw 1.25vw; 
+        font-size: 0.8vw;
     }
 }
