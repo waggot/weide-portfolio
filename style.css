@@ -252,11 +252,6 @@ p {
 ::-webkit-scrollbar-thumb{
     background: #595959;
     border-radius: 4px;
-
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: black;
 }
 
 footer {
