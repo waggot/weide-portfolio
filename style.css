@@ -19,6 +19,8 @@ body {
     background: rgb(222,222,222);
     background: linear-gradient(90deg, rgba(222,222,222,1) 0%, rgba(112,112,112,1) 100%);
 }
+
+
 .position {
     margin: 0;
     padding: 0;
@@ -464,9 +466,6 @@ meter::-webkit-meter-optimum-value {
     nav li{
         display: inline-block;
     }
-
-
-
 }
 
 @media only screen and (min-width: 1024px) {
