@@ -11,6 +11,10 @@ body {
     background: linear-gradient(90deg, rgba(222,222,222,1) 0%, rgba(112,112,112,1) 100%);
 }
 
+.body2 {
+    margin: 0px;
+}
+
 .bg1{
     background: rgb(222,222,222);
     background: linear-gradient(90deg, rgba(222,222,222,1) 0%, rgba(112,112,112,1) 100%);
@@ -114,7 +118,7 @@ body {
 }
 
 .showcase:hover {
-    background-color: #0b0c10;
+    background: #0b0c10;
     color: #ffffff;
     border-color: transparent;
 }
@@ -146,18 +150,20 @@ nav li {
 }
 
 .container {
+    padding-left: 0px;
     width: 100%;
     margin: 0 0 0 0;
     position: fixed;
     background: rgb(222,222,222);
     background: linear-gradient(90deg, rgba(222,222,222,1) 0%, rgba(112,112,112,1) 100%);
-    box-shadow: 0px 2px 2px -2px black;
+    box-shadow: 0px 1px 0px 0px;
 }
 
 header {
     margin-bottom: 80px;
     top: -30px;
     margin-top: -10px;
+    padding: 0px;
 }
 
 header::after {
