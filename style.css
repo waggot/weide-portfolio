@@ -426,6 +426,7 @@ meter::-webkit-meter-optimum-value {
 
    .bordertext{
        max-width: 80%;
+       width: 850px;
    }
 
    .item{
