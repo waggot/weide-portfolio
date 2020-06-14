@@ -70,12 +70,15 @@ body {
 .landingimg {
     width:  250px;
     animation-name: landingimg;
-    animation-duration: 1.3s;
+    animation-duration: 3s;
 }
 
 @keyframes landingimg {
     0%{
         opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
     }
 }
 
@@ -210,12 +213,15 @@ nav a:hover {
     border-radius: 50%;
     border: 3px solid;
     animation-name: mypic;
-    animation-duration: 2.5s;
+    animation-duration: 5s;
 }
 
 @keyframes mypic {
     0%{
-        height: 70px;
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
     }
 }
 
