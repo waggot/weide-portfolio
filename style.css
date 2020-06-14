@@ -393,6 +393,12 @@ meter::-webkit-meter-optimum-value {
     margin-right: 50px;
 }
 
+.languagebtn{
+    width: 200px;
+    height: 14px;
+    padding: 7px 14px;
+}
+
 @media only screen and (max-width: 600px) {
 
     .abouthr {
@@ -435,9 +441,6 @@ meter::-webkit-meter-optimum-value {
 }
 
 @media only screen and (min-width: 600px) {
-    nav{
-        float: right;
-    }
 
     nav li{
         display: none;
@@ -450,14 +453,7 @@ meter::-webkit-meter-optimum-value {
     @keyframes text {
         0%{
             color: transparent;
-            letter-spacing: 0.31vw;
-        }
-    }
-
-    @keyframes text {
-        0%{
-            color: transparent;
-            letter-spacing: 3px;
+            letter-spacing: 2px;
         }
     }
 }
