@@ -219,7 +219,7 @@ nav a:active {
 }
 
 .mypic {
-    height: 250px;
+    height: 13vw;
     border-radius: 50%;
     border: 3px solid;
     animation-name: mypic;
@@ -314,7 +314,7 @@ img {
 }
 
 .responsiveimg {
-    width: 750px;
+    width: 39vw;
     border-radius: 15px;
     padding: 10px;
     background: #0a0a23;
@@ -336,14 +336,14 @@ ul {
 }
 
 .responsiveimg1 {
-    width: 300px;
+    max-width: 300px;
     border-radius: 15px;
     background: #0a0a23;
     padding: 10px;
 }
 
 .responsiveimg2 {
-    width: 556px;
+    max-width: 556px;
     max-height: 790px;
     border-radius: 15px;
     background: #0a0a23;
@@ -381,8 +381,8 @@ meter::-webkit-meter-optimum-value {
 }
 
 .item{
-    height: 128px;
-    width: 128px;
+    height: 6.67vw;
+    width: 6.67vw;
     margin-left: 15px;
     font-weight: bold;
     border-radius: 16px;
@@ -412,10 +412,18 @@ meter::-webkit-meter-optimum-value {
     padding: 7px 14px;
 }
 
+.abouttext{
+    font-size: 1vw;
+}
+
 @media only screen and (max-width: 600px) {
 
     .abouthr {
         width: 40%  ;
+    }
+
+    .abouttext{
+        font-size: 20px;
     }
 
     nav{
@@ -452,6 +460,9 @@ meter::-webkit-meter-optimum-value {
     .btnmargin{
         margin-right: 0px;
     }
+    .mypic{
+        height: 250px;
+    }
 }
 
 @media only screen and (min-width: 600px) {
@@ -470,24 +481,34 @@ meter::-webkit-meter-optimum-value {
             letter-spacing: 2px;
         }
     }
+    .mypic{
+        height: 300px;
+    }
 }
 
 @media only screen and (min-width: 992px) {
     nav li{
         display: inline-block;
     }
+    .mypic{
+        height: 13vw;
+    }
+    .abouttext{
+        font-size: 1vw;
+    }
+    p{
+        font-size: 0.83vw;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
     nav li{
-        display: none;
+        display: inline-block;
     }
 }
 
 @media only screen and (min-width: 1200px) {
-    nav li{
-        display: inline-block;
-    }
+
     .text{
         font-size: 3.1vw;
     }
