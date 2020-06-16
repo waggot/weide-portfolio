@@ -162,6 +162,7 @@ nav li {
 .container {
     padding-left: 0px;
     width: 100%;
+    height: auto;
     margin: 0 0 0 0;
     position: fixed;
     background: rgb(222,222,222);
@@ -170,10 +171,10 @@ nav li {
 }
 
 header {
-    margin-bottom: 80px;
-    top: -30px;
-    margin-top: -10px;
-    padding: 0px;
+    margin-bottom: 4.1vw;
+    top: -1.56vw;
+    margin-top: -0.52vw;
+    padding: 0vw;
 }
 
 header::after {
@@ -507,6 +508,9 @@ meter::-webkit-meter-optimum-value {
 @media only screen and (min-width: 1024px) {
     nav li{
         display: inline-block;
+    }
+    h5{
+        font-size: 0.7vw;
     }
 }
 
