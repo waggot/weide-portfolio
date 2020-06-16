@@ -185,16 +185,16 @@ header::after {
 
 .logo1 {
     float: left;
-    margin-left: 20px;
+    margin-left: 1vw;
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 1vw;
 }
 
 nav li {
     display: inline-block;
-    padding-top: 35px;
-    margin-left: 40px;
-    margin-right: 20px;
+    padding-top: 1.8vw;
+    margin-left: 2.08vw;
+    margin-right: 1vw;
 }
 
 nav a{
@@ -466,6 +466,9 @@ meter::-webkit-meter-optimum-value {
     }
     .responsiveimg{
         width: 300px;
+    }
+    .logo1{
+        font-size: 20px;
     }
 }
 
