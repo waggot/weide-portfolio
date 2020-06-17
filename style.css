@@ -410,6 +410,11 @@ meter::-webkit-meter-optimum-value {
     font-size: 1vw;
 }
 
+.saljsicon{
+    width: 6.67vw;
+    height: 6.67vw;
+}
+
 @media only screen and (max-width: 600px) {
 
     .abouthr {
@@ -449,6 +454,11 @@ meter::-webkit-meter-optimum-value {
     border-radius: 0.83vw;
     background: black;
     padding: 0.5vw;
+    }
+    
+    .saljsicon{
+        height: 60px;
+        width: 60px;
     }
 
     .btnmargin{
