@@ -1,0 +1,23 @@
+{
+  "name": "weide-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waggot/weide-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/waggot/weide-portfolio/issues"
+  },
+  "homepage": "https://github.com/waggot/weide-portfolio#readme",
+  "dependencies": {
+    "sal.js": "^0.7.6"
+  }
+}
