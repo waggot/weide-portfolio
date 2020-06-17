@@ -223,15 +223,8 @@ nav a:active {
     height: 13vw;
     border-radius: 50%;
     border: 3px solid;
-    animation-name: mypic;
-    animation-duration: 2.5s;
 }
 
-@keyframes mypic {
-    0%{
-        height: 70px;
-    }
-}
 
 .abouthr {
     height: 6px; 
