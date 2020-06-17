@@ -470,6 +470,10 @@ meter::-webkit-meter-optimum-value {
     .logo1{
         font-size: 20px;
     }
+    .responsiveimg1{
+        height: auto;
+        width: 250px;
+    }
 }
 
 @media only screen and (min-width: 600px) {
