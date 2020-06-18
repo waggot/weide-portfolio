@@ -1,7 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
 
 html {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "raleway";
     scroll-behavior: smooth;
 }
 
@@ -114,7 +114,7 @@ body {
     border-radius: 4px;
     text-decoration: inherit;
     color: #0b0c10;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "raleway";
     font-weight: bold;
     background-color: transparent;
     transition: 0.4s;
@@ -186,7 +186,7 @@ header::after {
 .logo1 {
     float: left;
     margin-left: 1vw;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "raleway";
     font-size: 1vw;
 }
 
@@ -203,7 +203,7 @@ nav a{
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1vw;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "raleway";
     transition: 0.4s;
 }
 
@@ -227,7 +227,7 @@ nav a:active {
 
 
 .abouthr {
-    height: 6px; 
+    height: 3px; 
     background: black; 
     margin-bottom: 80px; 
     width: 5%;
