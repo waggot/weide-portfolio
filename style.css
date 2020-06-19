@@ -7,17 +7,14 @@ html {
 
 body {
     text-align: center;
-    background: rgb(222,222,222);
-    background: linear-gradient(90deg, rgba(222,222,222,1) 0%, rgba(112,112,112,1) 100%);
+    background-image: url(img/landscape_background_3107.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .body2 {
     margin: 0px;
-}
-
-.bg1{
-    background: rgb(222,222,222);
-    background: linear-gradient(90deg, rgba(222,222,222,1) 0%, rgba(112,112,112,1) 100%);
 }
 
 
@@ -25,7 +22,7 @@ body {
     margin: 0;
     padding: 0;
     left: 50%;
-    top: 40%;
+    top: 50%;
     position: absolute;
     transform: translateX(-50%) translateY(-50%);
 }
@@ -92,12 +89,6 @@ body {
         color: transparent;
         background-color: transparent;
     }
-
-}
-
-.heading{
-    animation: heading;
-    animation-duration: 4s;
 }
 
 @keyframes heading{
@@ -117,7 +108,7 @@ body {
     font-family: "raleway";
     font-weight: bold;
     background-color: transparent;
-    transition: 0.4s;
+    transition: 0.3s ease-in;
     margin-top: 20px;
     font-size:  16px;
 }
@@ -144,7 +135,6 @@ nav {
 }
 
 .home:hover{
-    color:white;
     letter-spacing: 4px;
 }
 
@@ -165,8 +155,7 @@ nav li {
     height: auto;
     margin: 0 0 0 0;
     position: fixed;
-    background: rgb(222,222,222);
-    background: linear-gradient(90deg, rgba(222,222,222,1) 0%, rgba(112,112,112,1) 100%);
+    background-color: white;
     box-shadow: 0px 1px 0px 0px black;
 }
 
@@ -209,9 +198,9 @@ nav a{
 
 nav a:hover {
     letter-spacing: 4px;
-    color: white;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
+    color: black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }    
 
 nav a:active {
@@ -280,6 +269,7 @@ footer {
 
 .credit {
     text-transform: uppercase;
+    font-weight: bold;
     font-size: 13px;
 }
 
@@ -310,8 +300,7 @@ img {
 .responsiveimg {
     width: 39vw;
     border-radius: 15px;
-    padding: 10px;
-    background: #0a0a23;
+    border: 3px solid #0a0a23;
 }
 
 .infoimg {
@@ -332,16 +321,14 @@ ul {
 .responsiveimg1 {
     max-width: 300px;
     border-radius: 15px;
-    background: #0a0a23;
-    padding: 10px;
+    border: 3px solid #0a0a23;
 }
 
 .responsiveimg2 {
     max-width: 556px;
     max-height: 790px;
     border-radius: 15px;
-    background: #0a0a23;
-    padding: 10px;
+    border: 3px solid #0a0a23;
 }
 
 meter {
@@ -390,8 +377,8 @@ meter::-webkit-meter-optimum-value {
 
 .bordertext{
     border-radius: 15px;
-    background: #ffffff;   
-    padding: 30px;
+    background: rgba(255, 255, 255, 0.8);   
+    padding: 30px 30px 30px 30px;
     width: 44vw;
     margin: auto;   
 }
@@ -413,6 +400,10 @@ meter::-webkit-meter-optimum-value {
 .saljsicon{
     width: 6.67vw;
     height: 6.67vw;
+}
+
+hr{
+    border-width: 0px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -477,6 +468,10 @@ meter::-webkit-meter-optimum-value {
         height: auto;
         width: 250px;
     }
+    body {
+        background-size: 255%;
+    }
+
 }
 
 @media only screen and (min-width: 600px) {
@@ -498,6 +493,15 @@ meter::-webkit-meter-optimum-value {
     .mypic{
         height: 300px;
     }
+    .item{
+        height: 6.67vw;
+        width: 6.67vw;
+        margin-left: 0.78vw;
+        font-weight: bold;
+        border-radius: 0.83vw;
+        background: black;
+        padding: 0.5vw;
+        }
 }
 
 @media only screen and (min-width: 992px) {
