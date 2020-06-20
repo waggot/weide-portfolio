@@ -189,12 +189,14 @@ header{
     background: #040404;
     box-shadow:  0px 1px 0px 0px white;
     height: 8vh;
+    z-index: 0;
 }
 
 nav a{
     font-size: 1vw;
     color: white;
     text-decoration: none;
+    transition: 0.2s;
 }
 
 nav li{
@@ -203,4 +205,34 @@ nav li{
     margin-left: 2.08vw;
     margin-right: 1vw;
     font-family: "Montserrat";
+}
+
+#backtotopbtn{
+    position: fixed;
+    bottom: 40px;
+    right: 35px;
+    outline: none;
+    background-color: #040404;
+    color: white;
+    border-radius: 50%;
+    font-size: 50px;
+    z-index: 1;
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width:  8px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+}
+
+nav a:hover{
+    padding-bottom: 26px;
+    border-bottom: 4px solid white;
 }
