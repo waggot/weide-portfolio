@@ -8,6 +8,7 @@
   <title> Wei De's portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="/sal/node_modules/sal.js/dist/sal.css">
+  <script src="https://kit.fontawesome.com/1e8638e8aa.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" type="image/png" href="img/favicon.ico?">
 </head>
 <body>
@@ -24,6 +25,8 @@
             </div>
         </div>
     </div>
+
+    <a href="#top" id="backtotopbtn"><i class="fas fa-arrow-circle-up"></i></a>
 
     <header>
         <div class="" style="z-index: 1;">
@@ -103,7 +106,7 @@
             certificates
             <hr class="abouthr" noshade>
         </div>
-        <div class="certcontainer">
+        <div class="certcontainer" data-sal="slide-right" data-sal-duration="1000">
             <div><img src="img/placeholder image.png" class="certimg"></div>
             <div><img src="img/placeholder image.png" class="certimg"></div>
             <div><img src="img/placeholder image.png" class="certimg"></div>
@@ -115,17 +118,17 @@
              academic certificates
             <hr class="abouthr" noshade>
         </div>
-        <div class="certcontainer">
+        <div class="certcontainer" data-sal="slide-right" data-sal-duration="1000">
             <div><img src="img/placeholder image.png" class="certimg"></div>
             <div><img src="img/placeholder image.png" class="certimg"></div>
             <div><img src="img/placeholder image.png" class="certimg"></div>
         </div>
-        <div class="certcontainer">
+        <div class="certcontainer" data-sal="slide-right" data-sal-duration="1000">
             <div><img src="img/placeholder image.png" class="certimg"></div>
             <div><img src="img/placeholder image.png" class="certimg"></div>
             <div><img src="img/placeholder image.png" class="certimg"></div>
         </div>
-        <div class="certcontainer">
+        <div class="certcontainer" data-sal="slide-right" data-sal-duration="1000">
             <div><img src="img/placeholder image.png" class="certimg"></div>
             <div><img src="img/placeholder image.png" class="certimg"></div>
         </div>
@@ -138,7 +141,7 @@
             achievements
            <hr class="abouthr" noshade>
        </div>
-        <div class="certcontainer">
+        <div class="certcontainer" data-sal="slide-right" data-sal-duration="1000">
             <div><img src="img/placeholder image.png" class="certimg"></div>
             <div><img src="img/placeholder image.png" class="certimg"></div>
         </div>
@@ -151,7 +154,7 @@
             Projects
            <hr class="abouthr" noshade>
        </div>
-        <div class="certcontainer">
+        <div class="certcontainer" data-sal="slide-right" data-sal-duration="1000">
             <div><img src="img/placeholder image.png" class="certimg"></div>
             <div><img src="img/placeholder image.png" class="certimg"></div>
         </div>
@@ -170,6 +173,18 @@
         sal({
             once: true,
         });
+        const backToTopButton = document.querySelector("#backtotopbtn");
+
+window.addEventListener("scroll", scrollFunction);
+
+function scrollFunction() {
+  if (window.pageYOffset > 450) {
+      backToTopButton.style.display = "block";
+    }
+  else {
+        backToTopButton.style.display = "none";
+    }
+}
     </script>
 </body>
 </html>
