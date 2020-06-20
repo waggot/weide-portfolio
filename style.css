@@ -1,339 +1,94 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway);
-
-html {
+@import url(https://fonts.googleapis.com/css?family=Raleway); 
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+html{
     font-family: "raleway";
     scroll-behavior: smooth;
+    text-align: center;
 }
 
-body {
-    text-align: center;
+body{
     background-image: url(img/landscape_background_3107.jpg);
     background-size: 100%;
-    background-attachment: fixed;
+    background-color: #040404;
     background-repeat: no-repeat;
-}
-
-.body2 {
     margin: 0px;
 }
-
-
-.position {
-    margin: 0;
-    padding: 0;
-    left: 50%;
-    top: 50%;
+div{
+    display: block;
+}
+.landingpage{
     position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
-
-.text {
-    font-size: 60px;
-    font-weight: bold;
-    animation-name: text;
-    animation-duration: 3.7s;
+.landingtext{
+    font-size: 50px;
+    font: bold;
 }
-
-@keyframes text {
-    0%{
-        color: transparent;
-        letter-spacing: 1vw;
-    }
+.content{
+    text-align: center;
 }
-
-.text1 {
-    font-size: 43px;
-    animation-name: text1;
-    animation-duration: 5s;
-}
-
-@keyframes text1 {
-    0%{
-        color: transparent;
-    }
-}
-
-.landinganchor {
-    animation-name: landinganchor;
-    animation-duration: 5s;
-}
-
-@keyframes landinganchor {
-    0%{
-        color: transparent;
-    }
-}
-
-.landingimg {
-    width:  250px;
-    animation-name: landingimg;
-    animation-duration: 3s;
-}
-
-@keyframes landingimg {
-    0%{
-        opacity: 0%;
-    }
-    100%{
-        opacity: 100%;
-    }
-}
-
-.fade {
-    animation-name: fade;
-    animation-duration: 4s;
-}
-
-@keyframes fade {
-    0%{
-        color: transparent;
-        background-color: transparent;
-    }
-}
-
-@keyframes heading{
-    0%{
-        color: transparent;
-    }
-}
-
-
-.showcase, .showcase:visited {
-    padding:  15px 24px;
+.BTN, .BTN:visited{
+    font-family: "Montserrat";
     display: inline-block;
-    border: 2px solid;
-    border-radius: 4px;
+    color: #040404;
     text-decoration: inherit;
-    color: #0b0c10;
-    font-family: "raleway";
-    font-weight: bold;
-    background-color: transparent;
-    transition: 0.3s ease-in;
-    margin-top: 20px;
-    font-size:  16px;
+    font-size: 28px;
+    background: rgba(255, 255, 255, 0.7);
+    border: 2px solid #040404;
+    padding: 10px 16px;
+    border-radius: 5px;
+    transition: ease-in-out 0.4s;
 }
-
-.showcase:hover {
-    background: #0b0c10;
-    color: #ffffff;
-    border-color: transparent;
+.BTN:hover{
+    background: #040404;
+    color: white;
 }
-
-.showcase:active{
-    font-size: 14px;
+.BTN:active{
+    font-size: 26px;
     transition: 170ms;
 }
-
-nav {
-    float: right;
-}
-
-.home{
-    color: black;
-    font-weight: bold;
-    transition: 0.4s;
-}
-
-.home:hover{
-    letter-spacing: 4px;
-}
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-nav li {
-    margin: -5px;
-    padding: 0;
-}
-
-.container {
-    padding-left: 0px;
-    width: 100%;
-    height: auto;
-    margin: 0 0 0 0;
-    position: fixed;
-    background-color: white;
-    box-shadow: 0px 1px 0px 0px black;
-}
-
-header {
-    margin-bottom: 4.1vw;
-    top: -1.56vw;
-    margin-top: -0.52vw;
-    padding: 0vw;
-}
-
-header::after {
-    content: '';
-    display: table;
-    clear: both;
-}
-
-.logo1 {
-    float: left;
-    margin-left: 1vw;
-    font-family: "raleway";
-    font-size: 1vw;
-}
-
-nav li {
-    display: inline-block;
-    padding-top: 1.8vw;
-    margin-left: 2.08vw;
-    margin-right: 1vw;
-}
-
-nav a{
-    color: #0b0c10;
-    text-decoration: none;
+.about{
+    padding-top: 133vh;
+    text-align: center;
+    color: white;
+    font-size: 40px;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 1vw;
-    font-family: "raleway";
-    transition: 0.4s;
+    letter-spacing: 3px;
 }
-
-nav a:hover {
-    letter-spacing: 4px;
-    color: black;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-}    
-
-nav a:active {
-    font-size: 0.9vw;
-    transition: 170ms;
+.abouthr{
+    width: 3%;
+    border: 2px solid white;
 }
-
-.mypic {
-    height: 13vw;
+.aboutpicborder{
+    height: 256px;
+    width: 256px;
     border-radius: 50%;
-    border: 3px solid;
+    border: 2px solid white;
 }
-
-
-.abouthr {
-    height: 3px; 
-    background: black; 
-    margin-bottom: 80px; 
-    width: 5%;
-    margin: auto;
+.aboutcontainer{
+    display: flex;
+    justify-content: center;
 }
-
-.divhr {
-    background-color: black;
-    height: 2px;
-    width: 50%;
-    margin-top: 60px;
-    margin-bottom: 60px;
+.paragraph{
+    text-align: justify;
+    font-family: "roboto";
+    color: white;
+    height: 256px;
+    width: 500px;
+    font-size: 20px;
+    padding-left: 30px;
 }
-
-p {
-    line-height: 1.8;
+.skills{
+    color: white;
+    font-family: "Montserrat";
 }
-
-.moretext {
-    float: left;
-}
-
-::-webkit-scrollbar {
-    width:  8px;
-}
-
-::-webkit-scrollbar-track {
-    background: #707070;
-}
-
-::-webkit-scrollbar-thumb{
-    background: #595959;
-    border-radius: 4px;
-}
-
-footer {
-    margin-bottom: 50px;
-}
-
-.icon {
-    height: 40px;
-    opacity: 60%;
-    transition: 0.5s;
-}
-
-.icon:hover {
-    opacity: 100%;
-    height: 46px;
-}
-
-.credit {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 13px;
-}
-
-li {
-    list-style: none;
-}
-
-.ccaimg {
-    margin-top: 24px;
-    margin-bottom: 14px;
-}
-
-.showcaseimg {
-    height: 500px;
-    margin-top: 24px;
-    max-width: 100%;
-}
-
-.explanation {
-    text-align: left;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.responsiveimg {
-    width: 39vw;
-    border-radius: 15px;
-    border: 3px solid #0a0a23;
-}
-
-.infoimg {
-    width: 1014px;
-}
-
-ul {
-    font-size: 16px;
-}
-
-.box {
-    width: 320px;
-    padding: 10px;
-    border: 5px solid gray;
-    margin: 0;
-}
-
-.responsiveimg1 {
-    max-width: 300px;
-    border-radius: 15px;
-    border: 3px solid #0a0a23;
-}
-
-.responsiveimg2 {
-    max-width: 556px;
-    max-height: 790px;
-    border-radius: 15px;
-    border: 3px solid #0a0a23;
-}
-
 meter {
     width: 250px;
-    height: 35px;
+    height: 30px;
 }
 
 meter::-webkit-meter-bar {
@@ -343,205 +98,61 @@ meter::-webkit-meter-bar {
 }
 
 meter::-webkit-meter-optimum-value {
-    background: black;
+    background: white;
 }
-
-.container1{
+.aboutdivhr{
+    width: 41vw;
+    border: 2px solid white;
+}
+.sectiontitle{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+section{
+    margin-top: 12vh;
+}
+.certcontainer{
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 15px;
 }
-
-.container2{
+.certimg{
+    width: 20vw;
+    border: 2px solid white;
+    border-radius: 4px;
+    margin-left: 30px;
+}
+.socialhr{
+    margin-top: 100px;
+}
+footer{
+    color: white
+}
+.techitem{
+    height: auto;
+    width: 96px;
+    margin-left: 30px;
+    background: white;
+    padding: 8px;
+    border-radius: 5px;
+}
+.techcontainer{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 80px;
-    margin-bottom: 20px;
-}
-
-.item{
-    height: 6.67vw;
-    width: 6.67vw;
-    margin-left: 15px;
-    font-weight: bold;
-    border-radius: 16px;
-    background: black;
-    padding: 10px;
-}
-
-.meterbar{
+    margin-top: 50px;
+    font-family: "Montserrat";
     font-weight: bold;
 }
-
-.bordertext{
-    border-radius: 15px;
-    background: rgba(255, 255, 255, 0.8);   
-    padding: 30px 30px 30px 30px;
-    width: 44vw;
-    margin: auto;   
+img {
+    max-width: 100%;
+    height: auto;
 }
-
-.btnmargin{
-    margin-right: 50px;
-}
-
-.languagebtn{
-    width: 200px;
-    height: 14px;
-    padding: 7px 14px;
-}
-
-.abouttext{
-    font-size: 1vw;
-}
-
-.saljsicon{
-    width: 6.67vw;
-    height: 6.67vw;
-}
-
-hr{
-    border-width: 0px;
-}
-
-@media only screen and (max-width: 600px) {
-
-    .abouthr {
-        width: 40%  ;
-    }
-
-    .abouttext{
-        font-size: 20px;
-    }
-
-    nav{
-        float: none;
-    }
-
-    nav li{
-        display: none;
-    }
-
-    .container{
-        position: relative;
-    }
-
-   div{
-       max-width: 100%;
-   }
-
-   .bordertext{
-       max-width: 80%;
-       width: 850px;
-   }
-
-   .item{
-    height: 60px;
-    width: 60px;
-    margin-left: 0.78vw;
-    font-weight: bold;
-    border-radius: 0.83vw;
-    background: black;
-    padding: 0.5vw;
-    }
-    
-    .saljsicon{
-        height: 60px;
-        width: 60px;
-    }
-
-    .btnmargin{
-        margin-right: 0px;
-    }
-    .mypic{
-        height: 250px;
-    }
-    .responsiveimg{
-        width: 300px;
-    }
-    .logo1{
-        font-size: 20px;
-    }
-    .responsiveimg1{
-        height: auto;
-        width: 250px;
-    }
-    body {
-        background-size: 255%;
-    }
-
-}
-
-@media only screen and (min-width: 600px) {
-
-    nav li{
-        display: none;
-    }
-
-    .bordertext{
-        max-width: 80%;
-    }
-
-    @keyframes text {
-        0%{
-            color: transparent;
-            letter-spacing: 2px;
-        }
-    }
-    .mypic{
-        height: 300px;
-    }
-    .item{
-        height: 6.67vw;
-        width: 6.67vw;
-        margin-left: 0.78vw;
-        font-weight: bold;
-        border-radius: 0.83vw;
-        background: black;
-        padding: 0.5vw;
-        }
-}
-
-@media only screen and (min-width: 992px) {
-    nav li{
-        display: inline-block;
-    }
-    .mypic{
-        height: 13vw;
-    }
-    .abouttext{
-        font-size: 1vw;
-    }
-    p{
-        font-size: 0.83vw;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-    nav li{
-        display: inline-block;
-    }
-    h5{
-        font-size: 0.7vw;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-
-    .text{
-        font-size: 3.1vw;
-    }
-    .text1{
-        font-size: 2.2vw;
-    }
-    .landingimg{
-        height: 13vw;
-        width: 18vw;
-    }
-    .landinganchor{
-        padding:  0.78vw 1.25vw; 
-        font-size: 0.8vw;
-    }
+.techsection{
+    margin-top: 6vh;
 }
