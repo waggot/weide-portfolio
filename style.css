@@ -14,22 +14,27 @@ body{
     background-repeat: no-repeat;
     margin: 0px;
 }
+
 div{
     display: block;
 }
+
 .landingpage{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
+
 .landingtext{
     font-size: 50px;
     font: bold;
 }
+
 .content{
     text-align: center;
 }
+
 .BTN, .BTN:visited{
     font-family: "Montserrat";
     display: inline-block;
@@ -42,16 +47,18 @@ div{
     border-radius: 5px;
     transition: ease-in-out 0.4s;
 }
+
 .BTN:hover{
     background: #040404;
     color: white;
 }
+
 .BTN:active{
     font-size: 26px;
     transition: 170ms;
 }
+
 .about{
-    padding-top: 133vh;
     text-align: center;
     color: white;
     font-size: 40px;
@@ -59,20 +66,24 @@ div{
     font-weight: bold;
     letter-spacing: 3px;
 }
+
 .abouthr{
     width: 3%;
     border: 2px solid white;
 }
+
 .aboutpicborder{
     height: 256px;
     width: 256px;
     border-radius: 50%;
     border: 2px solid white;
 }
+
 .aboutcontainer{
     display: flex;
     justify-content: center;
 }
+
 .paragraph{
     text-align: justify;
     font-family: "roboto";
@@ -82,10 +93,12 @@ div{
     font-size: 20px;
     padding-left: 30px;
 }
+
 .skills{
     color: white;
     font-family: "Montserrat";
 }
+
 meter {
     width: 250px;
     height: 30px;
@@ -100,10 +113,12 @@ meter::-webkit-meter-bar {
 meter::-webkit-meter-optimum-value {
     background: white;
 }
+
 .aboutdivhr{
     width: 41vw;
     border: 2px solid white;
 }
+
 .sectiontitle{
     text-align: center;
     color: white;
@@ -112,27 +127,33 @@ meter::-webkit-meter-optimum-value {
     font-weight: bold;
     letter-spacing: 3px;
 }
+
 section{
     margin-top: 12vh;
 }
+
 .certcontainer{
     margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
 .certimg{
     width: 20vw;
     border: 2px solid white;
     border-radius: 4px;
     margin-left: 30px;
 }
+
 .socialhr{
     margin-top: 100px;
 }
+
 footer{
     color: white
 }
+
 .techitem{
     height: auto;
     width: 96px;
@@ -141,6 +162,7 @@ footer{
     padding: 8px;
     border-radius: 5px;
 }
+
 .techcontainer{
     display: flex;
     flex-direction: row;
@@ -149,10 +171,36 @@ footer{
     font-family: "Montserrat";
     font-weight: bold;
 }
+
 img {
     max-width: 100%;
     height: auto;
 }
+
 .techsection{
     margin-top: 6vh;
+}
+
+
+header{
+    margin-top: 140vh;
+    top: 0;
+    position: sticky;
+    background: #040404;
+    box-shadow:  0px 1px 0px 0px white;
+    height: 8vh;
+}
+
+nav a{
+    font-size: 1vw;
+    color: white;
+    text-decoration: none;
+}
+
+nav li{
+    display: inline-block;
+    padding-top: 22px;
+    margin-left: 2.08vw;
+    margin-right: 1vw;
+    font-family: "Montserrat";
 }
