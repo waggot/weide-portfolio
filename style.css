@@ -27,7 +27,7 @@ div{
 }
 
 .landingtext{
-    font-size: 50px;
+    font-size: 2.6vw;
     font: bold;
 }
 
@@ -40,9 +40,9 @@ div{
     display: inline-block;
     color: #040404;
     text-decoration: inherit;
-    font-size: 28px;
+    font-size: 1.45vw;
     background: rgba(255, 255, 255, 0.7);
-    border: 2px solid #040404;
+    border: 0.1vw solid #040404;
     padding: 10px 16px;
     border-radius: 5px;
     transition: ease-in-out 0.4s;
@@ -97,11 +97,13 @@ div{
 .skills{
     color: white;
     font-family: "Montserrat";
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 meter {
-    width: 250px;
-    height: 30px;
+    width: 350px;
+    height: 25px;
 }
 
 meter::-webkit-meter-bar {
@@ -132,18 +134,38 @@ section{
     margin-top: 12vh;
 }
 
+
 .certcontainer{
     margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    z-index: 1;
 }
 
 .certimg{
-    width: 20vw;
+    width: 25vw;
+    height: 14.0625vw;
     border: 2px solid white;
     border-radius: 4px;
     margin-left: 30px;
+    transition: 0.4s;
+}
+
+.certimg1{
+    width: 16.5vw;
+    height: 23vw;
+    margin-left: 30px;
+    border: 2px solid white;
+    transition: 0.4s;
+}
+
+.certimg2{
+    width: 20vw;
+    height: 28vw;
+    margin-left: 30px;
+    border: 2px solid white;
+    transition: 0.4s;
 }
 
 .socialhr{
@@ -173,7 +195,7 @@ footer{
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -189,19 +211,20 @@ header{
     background: #040404;
     box-shadow:  0px 1px 0px 0px white;
     height: 8vh;
-    z-index: 0;
+    z-index: 100000000;
 }
 
 nav a{
     font-size: 1vw;
     color: white;
     text-decoration: none;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 nav li{
+    text-transform: uppercase;
     display: inline-block;
-    padding-top: 22px;
+    padding-top: 1.1458333333333333vw;
     margin-left: 2.08vw;
     margin-right: 1vw;
     font-family: "Montserrat";
@@ -212,7 +235,7 @@ nav li{
     bottom: 40px;
     right: 35px;
     outline: none;
-    background-color: #040404;
+    background-color: transparent;
     color: white;
     border-radius: 50%;
     font-size: 50px;
@@ -233,6 +256,173 @@ nav li{
 }
 
 nav a:hover{
-    padding-bottom: 26px;
-    border-bottom: 4px solid white;
+    letter-spacing: 2px;
+    border-bottom: 0.15625vw solid white;
+    border-top: 0.15625vw solid white;
+    padding: 0.26vw 0.416vw 0.26vw 0.416vw;
+}
+
+div.show-image {
+    position: relative;
+}
+div.show-image:hover img{
+    opacity: 0.3;
+}
+div.show-image p {
+    color: white;
+    font-weight: bold;
+    font-family: "Montserrat";
+    font-size: 20px;
+    position: absolute;
+    top: 40%;
+    padding: 0;
+    left: 53%;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    display:none;
+}
+div.show-image:hover p{
+    display: block;
+}
+
+div.show-image a, div.show-image a:visited{
+    font-family: "montserrat";
+    margin-top: 2%;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    display: none;
+    border: 3px solid black;
+    padding: 8px;
+    background: white;
+    transition: 0.4s;
+    width: 50%;
+    left: 25%;
+    right: 25%;
+    top: 50%;
+}
+
+div.show-image:hover a{
+    display: block;
+    text-align: center;
+    
+}
+
+div.show-image a:hover {
+    background: black;
+    color: white;
+}
+
+
+
+.lightbox {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 50;
+}
+
+.lightbox img {
+
+	max-width: 90%;
+	max-height: 80%;
+	margin-top: 10%;
+}
+
+.lightbox:target {
+	display: block;
+}
+
+.defaultimg{
+    width: 30%;
+    height: auto;
+}
+
+.techcontainermobile{
+    display: none;
+    flex-direction: row;
+    margin-top: 20px;
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+
+.techitemmobile{
+    height: auto;
+    margin: auto;
+    width: 96px;
+    background: white;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.logomobile{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    header li{
+        display: none;
+    }
+
+    .landingtext{
+        color: white;
+        font-size: 22px;
+    }
+    .aboutcontainer{
+        display: block;
+    }
+    .abouthr{
+        width: 30%;
+    }
+    .paragraph{
+        max-width: 90%;
+        height: auto;
+        padding: 5%;
+    }
+    .techcontainer{
+        display: none;
+    }
+    .techcontainermobile{
+        display: flex;
+        padding: 10%;
+        max-width: 80%;
+    }
+    .BTN{
+        font-size: 16px;
+    }
+    .BTN:active{
+        font-size: 14px;
+    }
+    .logomobile{
+        margin: auto;
+        display: block;
+        font-size: 26px;
+        float: left;
+        margin-top: 4%;
+    }
+    .certcontainer{
+        display: block;
+        margin: auto;
+    }
+    .certimg{
+        width: 80%;
+        height: auto;
+        margin: auto;
+    }
+    .certimg1{
+        width: 70%;
+        height: auto;
+        margin: auto;
+    }
+    .certimg2{
+        width: 70%;
+        height: auto;
+        margin: auto;
+    }
 }
