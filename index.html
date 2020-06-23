@@ -7,6 +7,7 @@
   <meta name="author" content="Hoh Wei De">
   <title> Wei De's portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/sal/node_modules/sal.js/dist/sal.css">
   <script src="https://kit.fontawesome.com/1e8638e8aa.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" type="image/png" href="img/favicon.ico?">
@@ -29,8 +30,9 @@
     <a href="#top" id="backtotopbtn"><i class="fas fa-arrow-circle-up"></i></a>
 
     <header>
-        <div class="" style="z-index: 1;">
+        <div style="z-index: 1000000;">
             <nav>
+                <a href="#top" class="logomobile">Wei De's Portfolio</a>
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#certificates">Certificates</a></li>
@@ -42,41 +44,46 @@
         </div>
     </header>
 
-    <div><a name="about"></a></div>
-
     <section>
+
+        <div><a name="about"></a></div>
+        <br>
+        <br>
+        <br>
+        <br>
         <div class="about">
             about
             <hr class="abouthr" noshade>
         </div>
         <div class="aboutcontainer">
             <div>
-                <img src="img/placeholder image.png" class="aboutpicborder">
+                <img src="img/placeholder image.png" class="aboutpicborder" data-sal="slide-right" data-sal-duration="1000">
             </div>
             <div class="aboutparagraph">
-                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <p class="paragraph" data-sal="zoom-in" data-sal-duration="1000">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
             </div>
         </div>
     </section>
 
     <hr class="aboutdivhr">
-
     <section class="techsection">
-        <div class="sectiontitle skills">
-            Language Proficiency
-            <hr class="abouthr" noshade>
-        </div>
-        <div class="skills">
-            <p class="meterbar">HTML5 - 70%</p>
-            <meter value="70" max="100" data-sal="zoom-in" data-sal-duration="1000" data-sal-></meter>
-            <p class="meterbar">CSS3 - 65%</p>
-            <meter value="6.5" max="10" data-sal="zoom-in" data-sal-duration="1000"></meter>
-            <p class="meterbar">Javascript - 40%</p>
-            <meter value="4" max="10" data-sal="zoom-in" data-sal-duration="1000"></meter>
-            <p class="meterbar">C++ - 20%</p>
-            <meter value="2" max="10" data-sal="zoom-in" data-sal-duration="1000"></meter>
-        </div>
+    <div class="sectiontitle skills">
+        Language Proficiency
+        <hr class="abouthr" noshade>
+    </div>
+    <div class="skills">
+        
+        <p>HTML5 - 70%</p>
+        <meter value="70" max="100" data-sal="zoom-in" data-sal-duration="1000" data-sal-></meter>
+        <p>CSS3 - 65%</p>
+        <meter value="6.5" max="10" data-sal="zoom-in" data-sal-duration="1000"></meter>
+        <p>Javascript - 40%</p>
+        <meter value="4" max="10" data-sal="zoom-in" data-sal-duration="1000"></meter>
+        <p >C++ - 20%</p>
+        <meter value="2" max="10" data-sal="zoom-in" data-sal-duration="1000"></meter>
+    </div>
+
         <div class="techsection">
             <div class="sectiontitle">
             Technologies
@@ -93,6 +100,21 @@
                 <div class="techitem"><img src="/img/discordjsicon.png"><p>Discord.js</p></div>
                 <div class="techitem"><img src="/img/sal js icon.PNG" class="saljsicon"><p>Sal.js</p></div>
             </div>
+            <div class="techcontainermobile" data-sal="zoom-in" data-sal-duration="1000" data-sal-offset="200">
+                <div class="techitemmobile" ><img src="/img/iconfinder_22_939737.png" class="techbackground"><p>HTML5</p></div>
+                <div class="techitemmobile" ><img src="/img/iconfinder_social_style_3_css3_341095.png" class="techbackground"><p>CSS3</p></div>
+            </div>
+            <div class="techcontainermobile" data-sal="zoom-in" data-sal-duration="1000" data-sal-offset="200">
+                <div class="techitemmobile" ><img src="/img/javascript.png" class="techbackground"><p>Javascript</p></div>
+                <div class="techitemmobile"><img src="img/C++ icon.jpg"><p>C++</p></div>
+            </div>
+            <div class="techcontainermobile" data-sal="zoom-in" data-sal-duration="1000" data-sal-offset="200">
+                <div class="techitemmobile"><img src="/img/mark-github-512.webp"><p>Github</p></div>
+                <div class="techitemmobile"><img src="/img/discordjsicon.png"><p>Discord.js</p></div>
+            </div>
+            <div class="techcontainermobile" data-sal="zoom-in" data-sal-duration="1000" data-sal-offset="200">
+                <div class="techitemmobile"><img src="/img/sal js icon.PNG" class="saljsicon"><p>Sal.js</p></div>
+            </div>
         </div>
     </section>
 
@@ -107,9 +129,21 @@
             <hr class="abouthr" noshade>
         </div>
         <div class="certcontainer" data-sal="slide-right" data-sal-duration="1000">
-            <div><img src="img/placeholder image.png" class="certimg"></div>
-            <div><img src="img/placeholder image.png" class="certimg"></div>
-            <div><img src="img/placeholder image.png" class="certimg"></div>
+            <div class="show-image">
+                <img src="img/html_css)cert.PNG" class="certimg">
+                <p>FreeCodeCamp</p>
+                <a href="https://www.freecodecamp.org/wadeot" target="_blank">View my progress</a>
+            </div>
+            <div class="show-image">
+                <img src="img/codecademy icon.jpg" class="certimg">
+                <p>Codecademy</p>
+                <a href="https://www.codecademy.com/users/yaYeet0167865794/achievements" target="_blank">View my progress</a>
+            </div>
+            <div class="show-image">
+                <img src="img/ycep2020.jpg" class="certimg">
+                <p>YCEP 2020</p>
+            </div>
+
         </div>
     </section>
 
@@ -119,9 +153,9 @@
             <hr class="abouthr" noshade>
         </div>
         <div class="certcontainer" data-sal="slide-right" data-sal-duration="1000">
-            <div><img src="img/placeholder image.png" class="certimg"></div>
-            <div><img src="img/placeholder image.png" class="certimg"></div>
-            <div><img src="img/placeholder image.png" class="certimg"></div>
+            <div><img src="img/academics-1.png" class="certimg1"></div>
+            <div><img src="img/academics-2.png" class="certimg1"></div>
+            <div><img src="img/academics-5.png" class="certimg1"></div>
         </div>
         <div class="certcontainer" data-sal="slide-right" data-sal-duration="1000">
             <div><img src="img/placeholder image.png" class="certimg"></div>
@@ -129,8 +163,14 @@
             <div><img src="img/placeholder image.png" class="certimg"></div>
         </div>
         <div class="certcontainer" data-sal="slide-right" data-sal-duration="1000">
-            <div><img src="img/placeholder image.png" class="certimg"></div>
-            <div><img src="img/placeholder image.png" class="certimg"></div>
+            <div>
+                <a href="#img1"><img src="img/Inkedresult slips-page-001_LI.jpg" class="certimg2"></a>
+                <a href="#_" class="lightbox" id="img1"><img src="img/Inkedresult slips-page-001_LI.jpg" class="defaultimg"></a>
+            </div>
+            <div>
+                <a href="#img2"><img src="img/Inkedresult slips-page-002_LI.jpg" class="certimg2"></a>
+                <a href="#_" class="lightbox" id="img2"><img src="img/Inkedresult slips-page-002_LI.jpg" class="defaultimg"></a>
+            </div>
         </div>
     </section>
 
@@ -155,8 +195,16 @@
            <hr class="abouthr" noshade>
        </div>
         <div class="certcontainer" data-sal="slide-right" data-sal-duration="1000">
-            <div><img src="img/placeholder image.png" class="certimg"></div>
-            <div><img src="img/placeholder image.png" class="certimg"></div>
+            <div class="show-image">
+                <img src="img/rsz_blahaj-bot-web 500px.png" class="certimg">
+                <p>Blahaj Discord bot</p>
+                <a href="">View more</a>
+            </div>
+            <div class="show-image">
+                <img src="img/placeholder image.png" class="certimg">
+                <p>Portfolio</p>
+                <a href="">View more</a>
+            </div>
         </div>
     </section>
 
