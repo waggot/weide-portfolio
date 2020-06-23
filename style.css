@@ -425,4 +425,8 @@ div.show-image a:hover {
         height: auto;
         margin: auto;
     }
+    #backtotopbtn{
+        bottom: 10px;
+        right: 10px;
+    }
 }
