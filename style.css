@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway); 
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 @import url(https://fonts.googleapis.com/css?family=Roboto);
+
 html{
     font-family: "raleway";
     scroll-behavior: smooth;
@@ -13,6 +14,7 @@ body{
     background-color: #040404;
     background-repeat: no-repeat;
     margin: 0px;
+    padding: 0px;
 }
 
 div{
@@ -94,11 +96,51 @@ div{
     padding-left: 30px;
 }
 
-.skills{
+
+.center{
+    width: 35%;
+    margin: auto;
+    text-align: inline; 
+    position: inline-block;
+}
+
+.skillbox{
+    font-family: 'montserrat';
+    box-sizing: border-box;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.skillbox p{
     color: white;
-    font-family: "Montserrat";
     text-transform: uppercase;
+    margin: 0 0 10px;
+    padding: 0;
+    letter-spacing: 2px;
     font-weight: bold;
+    text-align: left;
+}
+
+.skillbox p:nth-child(2){
+    float: right;
+    position: relative;
+    top: -25px;
+}
+
+.skill{
+    background: black;
+    padding: 4px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 1px;
+}
+
+.skill_level{
+    background: white;
+    width: 100%;
+    height: 10px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 
 meter {
@@ -255,19 +297,20 @@ nav li{
     background-color: #ffffff;
 }
 
-nav a:hover{
+nav li a:hover{
     letter-spacing: 2px;
     border-bottom: 0.15625vw solid white;
     border-top: 0.15625vw solid white;
-    padding: 0.26vw 0.416vw 0.26vw 0.416vw;
 }
 
 div.show-image {
     position: relative;
 }
+
 div.show-image:hover img{
     opacity: 0.3;
 }
+
 div.show-image p {
     color: white;
     font-weight: bold;
@@ -281,6 +324,7 @@ div.show-image p {
     transform: translate(-50%, -50%);
     display:none;
 }
+
 div.show-image:hover p{
     display: block;
 }
@@ -312,9 +356,8 @@ div.show-image:hover a{
 div.show-image a:hover {
     background: black;
     color: white;
+    border: 3px solid white;
 }
-
-
 
 .lightbox {
 	display: none;
@@ -340,8 +383,7 @@ div.show-image a:hover {
 }
 
 .defaultimg{
-    width: 30%;
-    height: auto;
+    width: 50vw;
 }
 
 .techcontainermobile{
@@ -365,6 +407,90 @@ div.show-image a:hover {
     display: none;
 }
 
+.logomobile1{
+    display: block;
+    float: left;
+    padding-top: 1.1458333333333333vw;
+    text-transform: uppercase;
+    margin-left: 0;
+    letter-spacing: 2px;
+    margin-left: 1vw;
+}
+
+.logomobile1:hover{
+    opacity: 0.75;
+}
+
+.projectbg{
+    background: black;
+    background-image: none;
+}
+
+.projectimg{
+    border: 3px solid white;
+    border-radius: 4px;
+    width: 60%;
+}
+
+.projectbody{
+    background-image: none;
+}
+
+.projectdiv{
+    text-align: left;
+    margin-top: 10vh;
+    color: white;
+    width: 50%;
+    margin: auto;
+}
+
+.porjectdiv h1{
+    font-size: 32px;
+}
+
+.projectabout{
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: auto;
+}
+
+.projectabouthr{
+    width: 20vw;
+    border: 1px solid white;
+    float: left;
+}
+
+.projectparagraph{
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.projectli{
+    font-family: 'montserrat';
+    font-size: 22px;
+    list-style: circle;
+}
+
+.projectlinking{
+    font-size: 22px;
+}
+
+.projectlink{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.projectlink:hover{
+    border-bottom: 2px solid white;
+}
+
+.abouthr1{
+    width: 7.5%;
+    border: 2px solid white;
+}
+
 @media only screen and (max-width: 600px) {
     header li{
         display: none;
@@ -374,31 +500,39 @@ div.show-image a:hover {
         color: white;
         font-size: 22px;
     }
+
     .aboutcontainer{
         display: block;
     }
+
     .abouthr{
         width: 30%;
     }
+
     .paragraph{
-        max-width: 90%;
+        width: 82%;
         height: auto;
-        padding: 5%;
+        padding: 9%;
     }
+
     .techcontainer{
         display: none;
     }
+
     .techcontainermobile{
         display: flex;
         padding: 10%;
         max-width: 80%;
     }
+
     .BTN{
         font-size: 16px;
     }
+
     .BTN:active{
         font-size: 14px;
     }
+
     .logomobile{
         margin: auto;
         display: block;
@@ -428,5 +562,37 @@ div.show-image a:hover {
     #backtotopbtn{
         bottom: 10px;
         right: 10px;
+    }
+
+    div.show-image:hover p{
+        display: none;
+    }
+
+    div.show-image:hover a{
+        display: none;
+    }
+
+    div.show-image:hover img{
+        opacity: 1;
+    }
+
+    .sectiontitle{
+        font-size: 8.5vw;
+    }
+
+    .about{
+        font-size: 8.5vw;
+    }
+
+    .mobileimg{
+        display: block;
+    }
+
+    .center{
+        width: 80%;
+    }
+
+    .abouthr1{
+        width: 37.5%;
     }
 }
