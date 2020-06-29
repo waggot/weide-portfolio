@@ -260,7 +260,11 @@ nav a{
     font-size: 1vw;
     color: white;
     text-decoration: none;
-    transition: 0.3s;
+    letter-spacing: 1px;
+    transition: 0.25s ease-in-out;
+    border-bottom: 2px solid transparent;
+    border-top: 2px solid transparent;
+    padding: 0;
 }
 
 nav li{
@@ -298,9 +302,16 @@ nav li{
 }
 
 nav li a:hover{
-    letter-spacing: 2px;
-    border-bottom: 0.15625vw solid white;
-    border-top: 0.15625vw solid white;
+    letter-spacing: 1px;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+nav li a:active{
+    font-size: 0.8vw;
 }
 
 div.show-image {
@@ -372,7 +383,6 @@ div.show-image a:hover {
 }
 
 .lightbox img {
-
 	max-width: 90%;
 	max-height: 80%;
 	margin-top: 10%;
@@ -383,7 +393,8 @@ div.show-image a:hover {
 }
 
 .defaultimg{
-    width: 50vw;
+    width: 36vw;
+    height: auto;
 }
 
 .techcontainermobile{
@@ -479,16 +490,22 @@ div.show-image a:hover {
 .projectlink{
     color: white;
     font-weight: bold;
-    text-decoration: none;
 }
 
 .projectlink:hover{
-    border-bottom: 2px solid white;
+    text-decoration: none;
 }
 
 .abouthr1{
     width: 7.5%;
     border: 2px solid white;
+}
+
+.resource{
+    margin-top: 3.5vh;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 600px) {
