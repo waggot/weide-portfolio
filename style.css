@@ -251,7 +251,7 @@ header{
     top: 0;
     position: sticky;
     background: #040404;
-    box-shadow:  0px 1px 0px 0px white;
+    box-shadow:  0px 1px 0px 1px white;
     height: 8vh;
     z-index: 100000000;
 }
@@ -307,11 +307,14 @@ nav li a:hover{
     border-top: 2px solid white;
     padding-top: 5px;
     padding-bottom: 5px;
+    font-size: 1vw;
 }
 
 
 nav li a:active{
-    font-size: 0.8vw;
+    font-size: 0.9vw;
+    transition: 0.1s;
+
 }
 
 div.show-image {
@@ -426,6 +429,7 @@ div.show-image a:hover {
     margin-left: 0;
     letter-spacing: 2px;
     margin-left: 1vw;
+
 }
 
 .logomobile1:hover{
@@ -508,6 +512,10 @@ div.show-image a:hover {
     font-weight: bold;
 }
 
+.mobileprojectpreview{
+    display: none;
+}
+
 @media only screen and (max-width: 600px) {
     header li{
         display: none;
@@ -546,6 +554,10 @@ div.show-image a:hover {
         font-size: 16px;
     }
 
+    .BTN:hover{
+        border: 2px solid white;
+    }
+
     .BTN:active{
         font-size: 14px;
     }
@@ -557,6 +569,11 @@ div.show-image a:hover {
         float: left;
         margin-top: 4%;
     }
+
+    .logomobile1{
+        font-size: 7/vw;
+    }
+
     .certcontainer{
         display: block;
         margin: auto;
@@ -581,14 +598,6 @@ div.show-image a:hover {
         right: 10px;
     }
 
-    div.show-image:hover p{
-        display: none;
-    }
-
-    div.show-image:hover a{
-        display: none;
-    }
-
     div.show-image:hover img{
         opacity: 1;
     }
@@ -611,5 +620,39 @@ div.show-image a:hover {
 
     .abouthr1{
         width: 37.5%;
+    }
+
+    .lightbox img {
+        width: 70vh;
+        height: auto;
+        margin-top: 38vh;
+    }
+
+    #img5 img{
+        width: 80%;
+        height: auto;
+        margin-top: 25vh;
+    }
+
+    #img6 img{
+        width: 80%;
+        height: auto;
+        margin-top: 25vh;
+    }
+
+    .projectpreview{
+        display: none;
+    }
+
+    .projectdiv{
+        width: 80%;
+    }
+
+    .projectparagraph{
+        line-height: 1.2;
+    }
+
+    .mobileprojectpreview{
+        display: block;
     }
 }

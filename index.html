@@ -46,14 +46,8 @@
 
     <section>
 
-        <div><a name="about"></a></div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <div style="height: 10vh;"><a name="about"></a></div>
+
         <div class="about">
             about
             <hr class="abouthr" noshade>
@@ -193,12 +187,12 @@
         </div>
         <div class="certcontainer" data-sal="slide-right" data-sal-duration="1000">
             <div>
-                <a href="#img5"><img src="img/Inkedresult slips-page-001_LI.jpg" class="certimg2"></a>
-                <a href="#_" class="lightbox" id="img5"><img src="img/Inkedresult slips-page-001_LI.jpg" class="defaultimg"></a>
+                <a href="#img5"><img src="img/placeholder image.png" class="certimg2"></a>
+                <a href="#_" class="lightbox" id="img5"><img src="img/placeholder image.png" class="defaultimg"></a>
             </div>
             <div>
-                <a href="#img6"><img src="img/Inkedresult slips-page-002_LI.jpg" class="certimg2"></a>
-                <a href="#_" class="lightbox" id="img6"><img src="img/Inkedresult slips-page-002_LI.jpg" class="defaultimg"></a>
+                <a href="#img6"><img src="img/placeholder image.png" class="certimg2"></a>
+                <a href="#_" class="lightbox" id="img6"><img src="img/placeholder image.png" class="defaultimg"></a>
             </div>
         </div>
         <div class="certcontainer" data-sal="slide-right" data-sal-duration="1000">
@@ -236,14 +230,25 @@
        </div>
         <div class="certcontainer" data-sal="slide-right" data-sal-duration="1000">
             <div class="show-image">
-                <img src="img/rsz_blahaj-bot-web 500px.png" class="certimg">
+                <img src="img/rsz_blahaj-bot-web 500px.png" class="certimg projectpreview">
                 <p>Blahaj Discord bot</p>
                 <a href="projects/blahaj-bot.html">View more</a>
             </div>
             <div class="show-image">
-                <img src="img/my portfolio.PNG" class="certimg">
+                <img src="img/my portfolio.PNG" class="certimg projectpreview">
                 <p>Portfolio</p>
                 <a href="projects/project.html">View more</a>
+            </div>
+        </div>
+
+        <div class="certcontainer" data-sal="slide-right" data-sal-duration="1000">
+            <div>
+                <a href="projects/blahaj-bot.html"><img src="/img/rsz_blahaj-bot-web 500px.png" class="certimg mobileprojectpreview"></a>
+            </div>
+            <br>
+            <div>
+                <a href="projects/project.html"><img src="/img/my portfolio.PNG" class="certimg mobileprojectpreview"></a>
+
             </div>
         </div>
     </section>
@@ -266,7 +271,7 @@
 window.addEventListener("scroll", scrollFunction);
 
 function scrollFunction() {
-  if (window.pageYOffset > 450) {
+  if (window.pageYOffset > 500) {
       backToTopButton.style.display = "block";
     }
   else {
