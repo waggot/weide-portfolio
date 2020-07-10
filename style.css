@@ -78,6 +78,7 @@ div{
     height: 256px;
     width: 256px;
     border-radius: 50%;
+    margin-top: -1vh;
     border: 2px solid white;
 }
 
@@ -98,6 +99,7 @@ div{
 
 
 .center{
+    padding-top: 4.5vh;
     width: 35%;
     margin: auto;
     text-align: inline; 
@@ -276,6 +278,7 @@ nav li{
     font-family: "Montserrat";
 }
 
+
 #backtotopbtn{
     position: fixed;
     bottom: 40px;
@@ -310,10 +313,9 @@ nav li a:hover{
     font-size: 1vw;
 }
 
-
 nav li a:active{
-    font-size: 0.9vw;
-    transition: 0.1s;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
 
 }
 
@@ -516,7 +518,8 @@ div.show-image a:hover {
     display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px){
+
     header li{
         display: none;
     }
@@ -567,11 +570,11 @@ div.show-image a:hover {
         display: block;
         font-size: 26px;
         float: left;
-        margin-top: 4%;
+        margin-top: 1.6vh;
     }
 
     .logomobile1{
-        font-size: 7/vw;
+        font-size: 7vw;
     }
 
     .certcontainer{
