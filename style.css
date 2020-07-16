@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway); 
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 @import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap);
 
 html{
     font-family: "raleway";
@@ -11,12 +12,28 @@ html{
 }
 
 body{
-    background-image: url(img/landscape_background_3107.jpg);
+    background-image: url(img/background.png);
     background-size: 100%;
     background-color: #040404;
     background-repeat: no-repeat;
     margin: 0px;
     padding: 0px;
+}
+
+.large-font{
+    font-family: 'Montserrat Subrayada';
+    font-size: 5vw;
+    color: black;
+    font-weight: bolder;
+    margin-top: -7vh;
+}
+
+.small-font{
+    font-size: 3.2vw;
+}
+
+.small-font-margin{
+    margin-top: -12vh;
 }
 
 div{
@@ -30,13 +47,22 @@ div{
     transform: translateX(-50%) translateY(-50%);
 }
 
+@keyframes float{
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(-1vw);}
+    100%{transform: translateY(0px);}
+}
+
 .landingtext{
-    font-size: 2.6vw;
-    font: bold;
+    font-family: "montserrat";
+    font-weight: 600;
+    width: 100%;
+    float: left;
+    animation: float 5s ease-in-out infinite
 }
 
 .content{
-    text-align: center;
+    text-align: left;
 }
 
 .BTN, .BTN:visited{
@@ -45,10 +71,10 @@ div{
     color: #040404;
     text-decoration: inherit;
     font-size: 1.45vw;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 1);
     border: 0.1vw solid #040404;
     padding: 10px 16px;
-    border-radius: 5px;
+    border-radius: 0;
     transition: ease-in-out 0.4s;
 }
 
@@ -88,9 +114,9 @@ div{
     text-align: justify;
     font-family: "roboto";
     color: white;
-    height: 27vh;
+    height: 13vw;
     width: 24vw;
-    font-size: 1vw;
+    font-size: 1.1vw;
     padding-left: 1.5625vw;
 }
 
@@ -188,8 +214,8 @@ section{
 .certimg{
     width: 25vw;
     height: 14.0625vw;
-    border: 2px solid white;
-    border-radius: 4px;
+    border: 3px solid white;
+    border-radius: 3px;
     margin-left: 0.78125vw;
     margin-right: 0.78125vw;
     transition: 0.4s;
@@ -200,8 +226,9 @@ section{
     height: 23vw;
     margin-left: 0.78125vw;
     margin-right: 0.78125vw;
-    border: 2px solid white;
+    border: 3px solid white;
     transition: 0.4s;
+    border-radius: 4px;
 }
 
 .certimg2{
@@ -209,8 +236,21 @@ section{
     height: 28vw;
     margin-left: 0.78125vw;
     margin-right: 0.78125vw;
-    border: 2px solid white;
+    border: 3px solid white;
     transition: 0.4s;
+    border-radius: 4px;
+}
+
+.certimg:hover{
+    opacity: 0.3;
+}
+
+.certimg1:hover{
+    opacity: 0.3;
+}
+
+.certimg2:hover{
+    opacity: 0.3;
 }
 
 .socialhr{
@@ -304,7 +344,7 @@ nav li{
     background-color: transparent;
     color: white;
     border-radius: 50%;
-    font-size: 50px;
+    font-size: 4vw;
     z-index: 1;
     display: none;
 }
@@ -590,6 +630,45 @@ div.show-image a:hover {
     letter-spacing: 3px;
 }
 
+.note{
+    color: white;
+    font-size: 0.75vw;
+}
+
+.testimonials{
+    padding-top: 2.6vw;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    position: relative;
+    color: white;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.centered{
+    font-weight: bold;
+    font-size: 1.2vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.container:hover .centered{
+    opacity: 1;
+}
+
+.arrow-margin{
+    margin-left: 1vw;
+}
+
+
+
 @media only screen and (max-width: 768px){
 
     header li{
@@ -628,16 +707,22 @@ div.show-image a:hover {
 
     .techcontainermobile{
         display: flex;
-        padding: 10%;
         max-width: 80%;
+        margin-top: 6vh;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .BTN{
         font-size: 16px;
+        transition: 0.2s;
     }
+
+
 
     .BTN:hover{
         border: 2px solid white;
+
     }
 
     .logomobile{
@@ -671,9 +756,11 @@ div.show-image a:hover {
         height: auto;
         margin: auto;
     }
+
     #backtotopbtn{
         bottom: 10px;
         right: 10px;
+        font-size: 8vh;
     }
 
     div.show-image:hover img{
@@ -773,5 +860,45 @@ div.show-image a:hover {
 
     .contactstitle{
         font-size: 6.5vw;
+    }
+
+    .note{
+        font-size: 12px;
+    }
+
+    .small-font{
+        font-size: 7vw;
+        color: white;
+        margin: auto;
+    }
+
+    .large-font{
+        font-size: 10vw;
+        color: white;
+        margin: auto;
+        width: 90vw;
+    }
+
+    .BTN{
+        margin-top: 3vh;
+    }
+
+    .testimonials{
+        display: block;
+    }
+
+    .centered{
+        font-size: 5vw;
+    }
+
+    .arrow-margin{
+        margin-left: 3vw;
+    }
+}
+
+@media only screen and (max-width: 1280px){
+
+    nav li{
+        padding-top: 13px;
     }
 }
