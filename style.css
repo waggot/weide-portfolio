@@ -49,7 +49,7 @@ div{
 
 @keyframes float{
     0%{transform: translateY(0px);}
-    50%{transform: translateY(-1vw);}
+    50%{transform: translateY(-1.5vw);}
     100%{transform: translateY(0px);}
 }
 
