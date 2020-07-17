@@ -33,7 +33,7 @@ body{
 }
 
 .small-font-margin{
-    margin-top: -12vh;
+    margin-top: -10vh;
 }
 
 div{
@@ -186,7 +186,7 @@ meter::-webkit-meter-optimum-value {
 
 .aboutdivhr{
     width: 41vw;
-    border: 2px solid white;
+    border-top: 2px solid white;
 }
 
 .sectiontitle{
@@ -893,6 +893,12 @@ div.show-image a:hover {
 
     .arrow-margin{
         margin-left: 3vw;
+    }
+
+    @keyframes float{
+        0%{transform: translateY(0px);}
+        50%{transform: translateY(-5vw);}
+        100%{transform: translateY(0px);}
     }
 }
 
