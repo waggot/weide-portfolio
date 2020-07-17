@@ -664,10 +664,15 @@ div.show-image a:hover {
 }
 
 .arrow-margin{
+    color: black;
     margin-left: 1vw;
+    transition: 0.2s;
 }
 
-
+.BTN:hover .arrow-margin{
+    margin-left: 2vw;
+    color: white;
+}
 
 @media only screen and (max-width: 768px){
 
