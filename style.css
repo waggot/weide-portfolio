@@ -607,7 +607,7 @@ div.show-image a:hover {
 }
 
 .contactsicon{
-    width: 48px;
+    width: 2.5vw;
     height: auto;
     margin-left: 1vw;
     margin-right: 1vw;
@@ -637,8 +637,10 @@ div.show-image a:hover {
 }
 
 .note{
-    color: white;
-    font-size: 0.75vw;
+    margin-top: 2.5vh;
+    color: black;
+    font-size: 1vw;
+    font-family: "roboto";
 }
 
 .testimonials{
