@@ -943,16 +943,28 @@ div.show-image a:hover {
     .footercopyright{
         font-size: 2vw;
     }
+
+    .note{
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 1024px){
+
     .large-font{
-        margin-top: -4vh;
+        margin-top: -2vh;
+        color: white;
+    }
+
+    .small-font{
+        color: white;
     }
 
     .small-font-margin{
-        margin-top: -7vh;
+        margin-top: -3vh;
     }
+
+    
 }
 
 @media only screen and (max-width: 1280px){
