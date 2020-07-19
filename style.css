@@ -945,7 +945,7 @@ div.show-image a:hover {
     }
 }
 
-@media only screen and (max-width: 1024px){
+@media only screen and (min-width: 1024px){
     .large-font{
         margin-top: -4vh;
     }
@@ -959,5 +959,16 @@ div.show-image a:hover {
 
     nav li{
         padding-top: 11px;
+    }
+}
+
+@media only screen and (min-width: 1280px){
+    .large-font{
+        font-size: 5vw;
+        margin-top: -7vh;
+    }
+    
+    .small-font-margin{
+        margin-top: -10vh;
     }
 }
