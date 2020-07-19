@@ -667,6 +667,9 @@ div.show-image a:hover {
     color: white;
 }
 
+.footercopyright{
+    font-size: 1.2vw;
+}
 
 
 @media only screen and (max-width: 768px){
@@ -856,6 +859,7 @@ div.show-image a:hover {
 
     .resource{
         font-size: 12px;
+        text-align: left;
     }
 
     .contactstitle{
@@ -929,6 +933,15 @@ div.show-image a:hover {
         box-sizing: border-box;
         border: 1px solid white;
         border-radius: 1px;
+    }
+
+    .contactsicon{
+        width: auto;
+        height: 5vh;
+    }
+
+    .footercopyright{
+        font-size: 2vw;
     }
 }
 
