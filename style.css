@@ -978,6 +978,11 @@ div.show-image a:hover {
     .large-font{
         font-size: 5vw;
         margin-top: -7vh;
+        color: black;
+    }
+
+    .small-font{
+        color: black
     }
     
     .small-font-margin{
