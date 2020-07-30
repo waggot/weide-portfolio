@@ -670,7 +670,7 @@ div.show-image a:hover {
 
 #viewmorehelp{
     margin-top: 92.5vh;
-    display: none;
+    display: n;
     color: white;
     font-family: 'roboto';
 }
