@@ -296,7 +296,6 @@ img {
 }
 
 .subpageheader{
-    
     top: 0;
     position: fixed;
     width: 100%;
@@ -467,13 +466,11 @@ div.show-image a:hover {
 }
 
 .logomobile1{
-    display: block;
+    display: none;
     float: left;
     padding-top: 0.5vw;
-    text-transform: uppercase;
     margin-left: 0;
     letter-spacing: 2px;
-    margin-left: 1vw;
 }
 
 .logomobile1:hover{
@@ -671,8 +668,30 @@ div.show-image a:hover {
     font-size: 1.2vw;
 }
 
+#viewmorehelp{
+    margin-top: 92.5vh;
+    display: none;
+    color: white;
+    font-family: 'roboto';
+}
+
+.mobileheader{
+    display: none;
+    font-size: 26px; 
+    float: left; 
+    margin-top: -1vh;
+}
 
 @media only screen and (max-width: 768px){
+
+    .mobileprojectimg{
+        height: auto;
+        width: 80vw;
+    }
+
+    .mobileheader{
+        display: block;
+    }
 
     header li{
         display: none;
@@ -947,6 +966,11 @@ div.show-image a:hover {
     .note{
         display: none;
     }
+
+    #viewmorehelp{
+        display: block;
+    }
+
 }
 
 @media only screen and (min-width: 1024px){
